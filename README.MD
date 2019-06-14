@@ -18,10 +18,9 @@
 
 * 第八步 在命令行中输入 `nodemon index.js` 即可爬取对应的内容，并且自动输出到当前文件夹下面的`index.pdf`文件中
 
-> `TIPS`: 本项目设计思想就是一个网页一个`PDF`文件，所以每次爬取一个单独页面后，请把`index.pdf`拷贝出去，然后继续更换`url`地址，继续爬取，生成新的`PDF`文件
+> `TIPS`: 本项目设计思想就是一个网页一个`PDF`文件，所以每次爬取一个单独页面后，请把`index.pdf`拷贝出去，然后继续更换`url`地址，继续爬取，生成新的`PDF`文件，当然，您也可以通过循环编译等方式去一次性爬取多个网页生成多个`PDF`文件。
 
 > 对应像京东首页这样的开启了图片懒加载的网页，爬取到的部分内容是`loading`状态的内容，对于有一些反爬虫机制的网页，爬虫也会出现问题，但是绝大多数网站都是可以的
-
 
 
 Anyone who knows node. js and puppeteer crawlers can do it. Please read this document carefully and execute each step in sequence
@@ -34,5 +33,5 @@ Anyone who knows node. js and puppeteer crawlers can do it. Please read this doc
 * step 6: download 'puppeteer' crawler package. After completing step 5, use 'CNPM I puppeteer --save' command to download
 * step 7: after downloading step 6, open the 'url.js' of this project and replace the web address you need the crawler to fetch (the default is' http://nodejs.cn/').
 * step 8 enter 'nodemon index.js' on the command line to crawl the corresponding content, and automatically output to the' index.pdf 'file under the current folder
-> 'TIPS' : the design idea of this project is a web page a 'PDF' file, so each time to crawl a separate page, please copy 'index.pdf' out, and then continue to change 'url' address, continue to crawl, generate a new 'PDF' file
+> 'TIPS' : the design idea of this project is a web page a 'PDF' file, so each time to crawl a separate page, please copy 'index.pdf' out, and then continue to change 'url' address, continue to crawl, generate a new 'PDF' file, of course, you can also through cyclic compilation to crawl multiple web pages to generate multiple 'PDF' files.
 > corresponds to the webpage with lazy loading of pictures such as the homepage of jd. Some of the contents crawled are in 'loading' state. For the webpage with some anti-crawler mechanism, crawlers may also have problems, but most websites are ok
